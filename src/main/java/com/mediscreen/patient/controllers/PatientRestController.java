@@ -42,7 +42,7 @@ public class PatientRestController {
         return new ResponseEntity<>(patientService.create(patient), HttpStatus.OK);
     }
 
-    @GetMapping(value = "/all")
+    @GetMapping(value = "/patient/all")
     public ResponseEntity<List<Patient>> getAll() {
         return new ResponseEntity<>(patientService.getAll(), HttpStatus.OK);
     }
