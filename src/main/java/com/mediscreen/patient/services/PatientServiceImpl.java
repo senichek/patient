@@ -64,7 +64,7 @@ public class PatientServiceImpl implements PatientService {
             throw new Exception((String.format("Entity with id %s does not exist.", p.getId())));
         } else {
             /*
-             * If the ID of the user exists in DB, Mongo will update the fields,
+             * If the ID of the user exists in DB, DB will update the fields,
              * another user with the same ID will not be created. This is why we
              * can use <patientRepo.save> for saving and updating the Entities.
              */
